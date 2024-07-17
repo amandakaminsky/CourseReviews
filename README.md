@@ -1,6 +1,6 @@
 # Course Reviews Application
 
-Welcome to UVA's <h1><strong>Course Reviews Application</strong></h1>! This project was developed collaboratively as part of my Software Development Essentials class at UVA. The aim of this application is to provide a platform where students can review and rate their courses.
+Welcome to UVA's <strong>Course Reviews Application</strong>! This project was developed collaboratively as part of my Software Development Essentials class at UVA. The aim of this application is to provide a platform where students can review and rate their courses.
 
 ## Project Lead
 
