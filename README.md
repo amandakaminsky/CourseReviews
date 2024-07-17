@@ -1,4 +1,4 @@
-**Course Reviews Application**
+<h1>**Course Reviews Application**</h1>
 
 Welcome to a UVA Course Reviews Application! This project was developed collaboratively as part of my Software Development Essentials class. The aim of this application is to provide a platform where students can review and rate their courses.
 
