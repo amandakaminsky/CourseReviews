@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane fx:id="borderPane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.sde.reviews.MyReviewsController" style="-fx-background-color: #e8f4f8; -fx-text-fill: #315d7b;">
+    <center>
+        <VBox spacing="10" style="-fx-background-color: #e8f4f8; -fx-text-fill: #315d7b;" VBox.vgrow="ALWAYS">
+            <padding>
+                <Insets top="15.0"/>
+            </padding>
+            <VBox spacing="10">
+                <Label text="Reviewed Courses:" style="-fx-font-weight: bold; -fx-font-size: 15.0;" />
+                <ListView fx:id="reviewedCourseListView" onMouseClicked="#handleCourseSelection" prefHeight="720"/>
+            </VBox>
+        </VBox>
+    </center>
+    <left>
+        <VBox spacing="15" style="-fx-background-color: #e8f4f8; -fx-text-fill: #315d7b;" prefWidth="180">
+            <HBox spacing="10">
+                <padding>
+                    <Insets top="20.0" bottom="15.0" />
+                </padding>
+                <Button onAction="#handleBack" text="Back" style="-fx-background-color: #add8e6;" prefWidth = "80" prefHeight="34"/>
+            </HBox>
+            <padding>
+                <Insets left="20.0" right="20.0" />
+            </padding>
+        </VBox>
+    </left>
+    <right>
+        <VBox spacing="10" style="-fx-background-color: #e8f4f8; -fx-text-fill: #315d7b;" VBox.vgrow="ALWAYS">
+            <padding>
+                <Insets top="15.0"/>
+            </padding>
+            <VBox spacing="10">
+                <Label text="My Rating:" style="-fx-font-weight: bold; -fx-font-size: 15.0;" />
+                <ListView fx:id="reviewInt" prefHeight="720.0" prefWidth="247.0" />
+            </VBox>
+        </VBox>
+    </right>
+</BorderPane>

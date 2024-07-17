@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--<AnchorPane xmlns="http://javafx.com/javafx"-->
+<!--            xmlns:fx="http://javafx.com/fxml"-->
+<!--            fx:controller="edu.virginia.sde.reviews.CourseReviewsController"-->
+<!--            prefHeight="400.0" prefWidth="600.0">-->
+<!--</AnchorPane>-->
+
+<BorderPane fx:id="borderPane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.sde.reviews.CourseReviewsController">
+
+    <left >
+        <VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="141.0" spacing="10" style="-fx-background-color: #e8f4f8; -fx-text-fill: #315d7b;">
+            <Button alignment="CENTER" contentDisplay="CENTER" onAction="#handleBackButton" prefHeight="28.0" prefWidth="58.0" text="Back" style="-fx-background-color: #add8e6;">
+                <VBox.margin>
+                    <Insets right="45.0" />
+                </VBox.margin></Button>
+            <padding>
+                <Insets top="20.0" />
+            </padding>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </VBox>
+    </left>
+    <center>
+        <VBox prefHeight="600.0" prefWidth="482.0" spacing="10" style="-fx-background-color: #e8f4f8; -fx-text-fill: #315d7b;">
+            <HBox alignment="TOP_CENTER" prefHeight="192.0" prefWidth="519.0" spacing="100">
+                <children>
+                    <VBox prefHeight="110.0" prefWidth="507.0">
+                        <children>
+                            <Label fx:id="courseTitle" alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="517.0" wrapText="true" style="-fx-font-weight: bold; -fx-font-size: 18.0;">
+                                <VBox.margin>
+                                    <Insets top="10.0" />
+                                </VBox.margin></Label>
+                            <Label fx:id="averageCourseRating" alignment="TOP_CENTER" contentDisplay="TOP" prefHeight="37.0" prefWidth="435.0">
+                                <opaqueInsets>
+                                    <Insets />
+                                </opaqueInsets>
+                                <VBox.margin>
+                                    <Insets left="35.0" />
+                                </VBox.margin>
+                            </Label>
+                        </children>
+                    </VBox>
+                </children>
+            </HBox>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+                <left>
+                    <VBox spacing="5">
+                        <Label text="Rating:" style="-fx-font-weight: bold;" />
+                        <ListView fx:id="ratingsList" prefHeight="200.0" prefWidth="44.0" BorderPane.alignment="CENTER" />
+                    </VBox>
+                </left>
+                <right>
+                    <VBox spacing="5">
+                        <Label text="Time:" style="-fx-font-weight: bold;" />
+                        <ListView fx:id="timestampList" prefHeight="200.0" prefWidth="160.0" BorderPane.alignment="CENTER" />
+                    </VBox>
+                </right>
+                <center>
+                    <VBox spacing="5">
+                        <Label text="Comment:" style="-fx-font-weight: bold;" />
+                        <ListView fx:id="commentsList" prefHeight="259.0" prefWidth="326.0" BorderPane.alignment="CENTER"/>
+                    </VBox>
+                </center>
+            </BorderPane>
+            <HBox alignment="CENTER" prefHeight="0.0" prefWidth="406.0" />
+            <ChoiceBox fx:id="ratingChoiceBox" prefHeight="25.0" prefWidth="84.0" value="Rating" style="-fx-background-color: #add8e6;"/>
+            <TextField fx:id="reviewCommentTextField" prefHeight="32.0" prefWidth="519.0" promptText="Add a comment here (Optional)">
+                <VBox.margin>
+                    <Insets />
+                </VBox.margin></TextField>
+            <HBox prefHeight="19.0" prefWidth="700.0" alignment="CENTER_RIGHT">
+                <children>
+                    <Button fx:id="postReviewButton" alignment="CENTER" mnemonicParsing="false" onAction="#submitReview" prefHeight="25.0" prefWidth="97.0" text="Post Review" style="-fx-background-color: #add8e6;">
+                        <HBox.margin>
+                            <Insets left="320.0" />
+                        </HBox.margin>
+                    </Button>
+                    <Button fx:id="cancelReviewButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleCancelReviewButton" prefHeight="25.0" prefWidth="72.0" text="Cancel" style="-fx-background-color: #add8e6;">
+                        <HBox.margin>
+                            <Insets left="27.0" />
+                        </HBox.margin></Button>
+                </children>
+            </HBox>
+        </VBox>
+    </center>
+
+    <right>
+        <VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="139.0" spacing="10" style="-fx-background-color: #e8f4f8; -fx-text-fill: #315d7b;">
+            <Button fx:id="addReviewButton" alignment="CENTER" contentDisplay="CENTER" onAction="#handleAddReviewButton" prefHeight="30.0" prefWidth="100.0" text="Add Review" style="-fx-background-color: #add8e6;">
+                <VBox.margin>
+                    <Insets right="10.0" />
+                </VBox.margin></Button>
+            <Button fx:id="editReviewButton" alignment="CENTER" contentDisplay="CENTER" onAction="#handleEditReviewButton" prefHeight="30.0" prefWidth="100.0" text="Edit Review" style="-fx-background-color: #add8e6;">
+                <VBox.margin>
+                    <Insets right="10.0" />
+                </VBox.margin></Button>
+            <Button fx:id="deleteReviewButton" alignment="CENTER" contentDisplay="CENTER" onAction="#handleDeleteReviewButton" prefHeight="30.0" prefWidth="100.0" text="Delete Review" style="-fx-background-color: #add8e6;">
+                <VBox.margin>
+                    <Insets right="10.0" />
+                </VBox.margin></Button>
+            <padding>
+                <Insets left="15.0" top="20.0" />
+            </padding>
+            <BorderPane.margin>
+                <Insets bottom="40.0" />
+            </BorderPane.margin>
+        </VBox>
+    </right>
+</BorderPane>
+

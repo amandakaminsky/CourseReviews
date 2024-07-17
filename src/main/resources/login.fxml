@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" centerShape="true" prefHeight="700.0" prefWidth="1280.0" style="-fx-background-color: #add8e6;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.sde.reviews.LoginController">
+    <children>
+        <Text fill="#145e97" layoutX="565.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" textAlignment="CENTER" wrappingWidth="148.2744140625">
+            <font>
+                <Font name="Lava Kannada Regular" size="55.0" />
+            </font>
+        </Text>
+        <Button fx:id="closeButton" layoutX="15.0" layoutY="15.0" mnemonicParsing="false" onAction="#closeLoginWindow" text="Close" textFill="#0a0a0a" prefWidth="65.0" prefHeight="35.0">
+            <font>
+                <Font name="Lava Kannada Regular" size="13.0" />
+            </font>
+        </Button>
+        <VBox layoutX="510.0" layoutY="280.0" spacing="10" alignment="CENTER_LEFT">
+            <TextField fx:id="usernameField" promptText="Username" prefHeight="44.0" prefWidth="190.0">
+                <font>
+                    <Font name="Lava Kannada Regular" size="13.0" />
+                </font>
+            </TextField>
+            <PasswordField fx:id="passwordField" promptText="Password" prefHeight="34.0" prefWidth="190.0">
+                <font>
+                    <Font name="Lava Telugu Regular" size="13.0" />
+                </font>
+            </PasswordField>
+            <VBox prefHeight="4.0" />
+            <HBox spacing="15" alignment="CENTER">
+                <Button fx:id="loginButton" mnemonicParsing="false" onAction="#loginButtonClicked" prefHeight="46.0" prefWidth="100.0" text="Login" textFill="#4a4848">
+                    <font>
+                        <Font name="Lava Kannada Regular" size="13.0" />
+                    </font>
+                </Button>
+                <Button fx:id="createAccountButton" mnemonicParsing="false" onAction="#createAccountButtonClicked" prefHeight="38.0" prefWidth="150.0" text="Create Account" textFill="#4a4848">
+                    <font>
+                        <Font name="Lava Telugu Regular" size="13.0" />
+                    </font>
+                </Button>
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>
