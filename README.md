@@ -22,3 +22,19 @@ Welcome to UVA's <strong>Course Reviews Application</strong>! This project was d
 - **Submit Reviews**: Users can submit their reviews and ratings for courses.
 - **View Reviews**: Users can view all reviews for a particular course.
 - **Search Functionality**: Users can search for specific courses.
+
+##Installation
+1. <strong> Clone the repository:  <\strong>
+git clone https://github.com/amandakaminsky/CourseReviews.git  
+cd CourseReviews
+
+3. <strong>Set up the database: <\strong> 
+Ensure you have SQLite installed.  
+Run the SQL scripts provided in the database directory to set up the necessary tables.  
+
+4.<strong> Build the project: <\strong>   
+Open the project in your preferred Java IDE (e.g., IntelliJ IDEA, Eclipse).  
+Build the project to resolve dependencies.
+
+6. <strong>Run the application:  <\strong>  
+Execute the main class to start the JavaFX application.  
